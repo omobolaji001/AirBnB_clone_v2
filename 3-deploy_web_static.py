@@ -4,6 +4,11 @@ from datetime import datetime
 from os import path
 
 
+env.hosts = ['54.160.124.59', '54.160.95.91']
+env.user = 'ubuntu'
+env.key_filename = '~/.ssh/school'
+
+
 def do_pack():
     """ generates a tgz archive from the content of web_static/ """
     date_time = datetime.now()
@@ -18,11 +23,6 @@ def do_pack():
 
     except Exception as e:
         return None
-
-
-env.hosts = ['54.160.124.59', '54.160.95.91']
-env.user = 'ubuntu'
-env.key_filename = '~/.ssh/school'
 
 
 def do_deploy(archive_path):
