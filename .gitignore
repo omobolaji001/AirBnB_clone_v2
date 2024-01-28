@@ -1,3 +1,6 @@
 versions
 test_params_create
+main_delete.py
 main.py
+7-dump.sql
+file.json
